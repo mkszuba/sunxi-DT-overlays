@@ -140,6 +140,14 @@ param_pps_falling_edge (bool)
 	When set (to 1), assert is indicated by a falling edge
 		(instead of by a rising edge)
 
+param_pps_capture_clear (bool)
+	Generate clear events on the trailing edge
+	Optional
+	Default: 0
+	When set (to 1), PPS clear events will be generated on the trailing edge
+	of the signal in addition to assert events triggered by the leading edge
+	(see param_pps_falling_edge above).
+
 ### pwm
 
 Activates hardware PWM controller
